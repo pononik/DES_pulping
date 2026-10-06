@@ -5,9 +5,10 @@ Created on Wed Aug 19 10:56:11 2026
 
 @author: ponoman1
 """
-# Modeling of deep eutectic solvent (DES) pulping
-# According to literature data Smink2020 and Perez2025
+# Modeling of deep eutectic solvent (DES) pulping.
+# According to literature data Smink2020 and Perez2025.
 # Nikolai P. Ponomarev
+# Use 'process_diagram_des.pdf' for numbering of streams.
 #%% Libraries
 import pandas as pd
 import numpy as np
@@ -81,7 +82,7 @@ C_nacl = 0.9 # NaCl (kJ/kg*oC)
 hev = 2256 # Enthalpy of vaporization of water, i.e latent heat (kJ/kg)
 biomass_cal = 11 # lignin or wood LHV (MJ/kg) [FRAM11]
 Kb = 0.512 # ebullioscopic constant (boiling-point elevation constant) of water (i.e. solvent) (K*kg/mol) 
-wood_carbon = 0.5 # Stoicheometric carbon content in wood (%)
+wood_carbon = 0.5 # Stoichiometric carbon content in wood (%)
 # Creating a dataframe
 data_given_des = [
     ["Description", "Value", "Variation limit", "Unit", "Variable"],
